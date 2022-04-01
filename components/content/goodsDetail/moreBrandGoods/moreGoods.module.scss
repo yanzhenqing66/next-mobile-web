@@ -1,0 +1,8 @@
+@import '../../../../styles//common.scss';
+
+.wrap {
+  &_title {
+    padding: rem(20);
+    font-size: rem(14);
+  }
+}

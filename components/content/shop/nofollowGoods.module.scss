@@ -1,0 +1,39 @@
+@import '../../../styles/common.scss';
+
+.no_follow_goods {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem(20);
+
+  img {
+    margin-top: rem(10);
+    width: rem(100);
+    height: rem(100);
+  }
+
+  h2 {
+    margin-top: rem(10);
+    font-size: rem(16);
+    line-height: rem(26);
+  }
+
+  p {
+    margin-top: rem(10);
+    line-height: rem(20);
+  }
+
+  .conBtn {
+    margin-top: rem(16);
+    background-color: #222;
+    color: #fff;
+    width: rem(180);
+    height: rem(40);
+    border-radius: 100px;
+    font-size: rem(13);
+  }
+}

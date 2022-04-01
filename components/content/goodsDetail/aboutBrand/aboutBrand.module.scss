@@ -1,0 +1,48 @@
+@import '../../../../styles/common.scss';
+
+.aboutbrand {
+	padding: rem(20) 0;
+	border-bottom: 1px solid #f6f6f6;
+
+	h3 {
+		font-size: rem(14);
+		font-weight: 600;
+		margin-bottom: rem(20);
+	}
+
+	.container {
+		display: flex;
+		color: #222;
+		background-color: #f6f6f6;
+		border-radius: rem(8);
+		padding: rem(10);
+	}
+
+	.logo {
+		width: rem(68);
+		height: rem(68);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba($color: #000, $alpha: 0.05);
+		border-radius: 8px;
+	}
+
+	.brandDesc {
+		margin-left: rem(10);
+		flex: 1;
+	}
+
+	.brandTips {
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			font-weight: 400;
+			padding: rem(1) rem(4);
+			border: 0.4px solid #7a7a7a;
+			margin-right: rem(5);
+			border-radius: 6px;
+		}
+	}
+}

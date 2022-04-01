@@ -1,0 +1,38 @@
+@import '../../../../styles/common.scss';
+
+.wrap {
+  width: rem(333);
+  margin: 0 auto;
+  height: rem(116);
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: rem(20);
+  position: relative;
+
+  .top {
+    position: absolute;
+    top: rem(-7);
+    padding: 0 rem(10);
+    background-color: #fff;
+  }
+  
+
+  .content {
+    width: rem(205);
+    // height: rem(44);
+  }
+
+  .bottom {
+    margin-top: rem(8);
+    width: rem(280);
+    text-align: center;
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: rem(10);
+  }
+}

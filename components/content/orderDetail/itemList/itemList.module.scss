@@ -1,0 +1,22 @@
+@import '../../../../styles/common.scss';
+
+.itemList {
+  padding: 0 rem(20);
+
+  h4 {
+    height: rem(60);
+    line-height: rem(60);
+    font-size: rem(13);
+  }
+
+  .content {
+    font-weight: 400;
+    line-height: rem(18);
+  }
+
+  .bottom_line {
+    margin-top: rem(10);
+    height: 1px;
+    background-color: #eee;
+  }
+}

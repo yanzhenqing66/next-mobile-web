@@ -1,0 +1,26 @@
+@import '../../../../styles/common.scss';
+
+.checkout {
+  position: sticky;
+  bottom: rem(47);
+  height: rem(64);
+  box-shadow: 0 0 1px #c8c8c8;
+  padding: 0 rem(20);
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+
+  .total {
+    font-size: rem(14);
+    font-weight: 600;
+  }
+
+  .checkClick {
+    width: rem(120);
+    height: rem(40);
+    font-size: rem(14);
+  }
+}

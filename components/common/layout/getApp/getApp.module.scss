@@ -1,0 +1,54 @@
+@import '../../../../styles/common.scss';
+
+.wrap {
+  width: 100%;
+  height: rem(70);
+  background: rgba($color: #4e4e4e, $alpha: 1.0);
+  box-shadow: inset 0px -0.5px 0px #EEEEEE;
+
+  padding: 0 rem(10);
+
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.close {
+  padding: rem(2);
+}
+
+.logo {
+  margin: 0 rem(8);
+  width: rem(50);
+  height: rem(50);
+}
+
+.right {
+  flex: 1;
+  height: rem(50);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-size: rem(13);
+    @extend %max1Line;
+  }
+}
+
+.comment {
+  font-size: rem(10);
+  font-weight: 400;
+  display: flex;
+
+  span {
+    margin-right: 3px;
+
+    &:last-child {
+      margin-left: -2px;
+      font-size: rem(10);
+      transform: scale(0.8);
+    }
+  }
+}

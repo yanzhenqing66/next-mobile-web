@@ -1,0 +1,75 @@
+@import '../../../../styles/common.scss';
+
+
+
+.container {
+  padding: 0 rem(20);
+  background-color: #fff;
+  display: block;
+  color: #222;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.followHeader {
+  height: rem(80);
+
+  .brandLogo {
+    margin-top: rem(20);
+    float: left;
+    width: rem(42);
+    height: rem(42);
+    border-radius: 8px;
+    @extend %flexCenter;
+    background-color: #f6f6f6;
+    overflow: hidden;
+  }
+
+  .brand {
+    margin-top: rem(20);
+    height: rem(42);
+    float: left;
+    margin-left: rem(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: rem(250);
+    overflow: hidden;
+
+    h4 {
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .tips {
+      color: #F93A3A;
+      font-size: rem(8);
+    }
+  }
+
+  .goDetail {
+    margin-top: rem(30);
+    float: right;
+    width: rem(18);
+    height: rem(18);
+  }
+}
+
+.followMain {
+  background-color: #fff;
+  height: rem(110);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  img {
+    display: block;
+    height: rem(80);
+    width: rem(80);
+    border-radius: rem(8);
+  }
+}

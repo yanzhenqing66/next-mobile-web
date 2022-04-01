@@ -1,0 +1,35 @@
+@import '../../../../styles/common.scss';
+
+.fd_info {
+    background-color: #fff;
+    padding: rem(5) rem(20);
+
+    h1 {
+      font-weight: 600;
+      font-size: rem(18);
+      line-height: rem(20);
+      margin: rem(5) 0;
+      
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .fd_info_title {
+      line-height: rem(18);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      margin: rem(10) 0;
+    }
+
+    .fd_info_desc {
+      margin-top: rem(12);
+      font-weight: 400;
+      line-height: rem(18);
+      color: #4E4E4E;
+    }
+  }

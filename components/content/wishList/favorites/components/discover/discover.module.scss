@@ -1,0 +1,23 @@
+@import '../../../../../../styles/common.scss';
+
+.discover {
+  padding-top: rem(20);
+
+  h3 {
+    height: rem(40);
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: rem(30);
+    color: #000000;
+    margin-left: rem(16);
+  }
+
+  .fixedTop {
+    position: fixed;
+    top: 113px;
+    z-index: 9;
+    background-color: #fff;
+    max-width: 480px;
+    width: 100%;
+  }
+}

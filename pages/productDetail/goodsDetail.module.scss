@@ -1,0 +1,40 @@
+@import '../../styles/common.scss';
+
+.wrap {
+  height: 100vh;
+}
+
+.scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: rem(50);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+.topBackShare {
+  position: absolute;
+  width: 100%;
+  top: rem(50);
+  z-index: 10;
+
+  .shareDetail {
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    margin-left: rem(5);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    @extend %flexCenter;
+  }
+}
+
+.main {
+  padding: rem(20) rem(20) 0 rem(20);
+}

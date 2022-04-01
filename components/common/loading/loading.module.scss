@@ -1,0 +1,13 @@
+@import '../../../styles/common.scss';
+
+.loading {
+  // position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .load {
+    font-size: rem(22);
+    color: $primaryColor;
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../../../styles/common.scss';
+
+
+.wrap {
+  position: sticky;
+  bottom: rem(30);
+  width: rem(328);
+  height: rem(166);
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  background-color: #fff;
+  padding: rem(20);
+  animation: fadeIndown .8s;
+
+  .top {
+    margin-top: rem(10);
+    display: flex;
+  }
+
+  .left {
+    width: rem(68);
+    height: rem(68);
+    border-radius: 8px;
+    margin-right: rem(16);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right {
+    h4 {
+      font-weight: 700;
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+
+    p {
+      font-size: rem(13);
+      line-height: rem(20);
+    }
+  }
+
+  .open_app {
+    width: rem(118);
+    height: rem(36);
+    color: #fff;
+    font-size: rem(14);
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: rem(15);
+  }
+
+  .close {
+    position: absolute;
+    right: rem(20);
+    top: rem(15);
+  }
+
+  @keyframes fadeIndown {
+    0% {
+      transform: scale3d(0.5, 0.5, 0.5);
+      opacity: 0;
+    }
+
+    50% {
+      animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      opacity: 1;
+    }
+  }
+}

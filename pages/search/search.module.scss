@@ -1,0 +1,28 @@
+@import '../../styles/common.scss';
+
+.search {
+  height: 100%;
+  
+  .searchTop {
+    color: #222;
+    background-color: #fff;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 20px;
+
+    .goBack {
+      width: 24px;
+      height: 24px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .searchList {
+    color: #222;
+    font-weight: 400;
+  }
+}

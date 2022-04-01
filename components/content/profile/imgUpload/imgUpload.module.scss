@@ -1,0 +1,19 @@
+.imgUpload {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  img {
+    width: 211px;
+    height: 211px;
+  }
+
+  .uptHead {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+}

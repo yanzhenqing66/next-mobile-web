@@ -1,0 +1,74 @@
+@import '../../../../styles/common.scss';
+
+.img_review {
+  width: 100%;
+  margin-bottom: rem(32);
+
+  .img_box {
+    width: 100%;
+    height: rem(335);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .count {
+      padding: 4px 10px;
+
+      position: absolute;
+      bottom: rem(12);
+      right: rem(12);
+
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 25px;
+
+      color: #fff;
+    }
+  }
+
+  .user {
+    margin: rem(10) 0;
+    display: flex;
+
+    img {
+      width: rem(36);
+      height: rem(36);
+      border-radius: 50%;
+    }
+
+    .info {
+      margin-left: rem(10);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h5 {
+        .name {
+          font-size: 14px;
+          font-weight: 600;
+          margin-right: 8px;
+        }
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      p {
+        color: #7a7a7a;
+        font-size: 10px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .view {
+    line-height: rem(20);
+    font-size: rem(14);
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../../styles/common.scss';
+
+
+.title {
+  margin: rem(10) 0;
+  font-size: rem(13);
+}
+
+.content {
+  font-size: rem(12);
+  line-height: rem(18);
+  font-weight: 400;
+
+  .name {
+    margin-bottom: rem(8);
+    color: #222;
+    font-weight: 600;
+    font-size: rem(13);
+    display: block;
+  }
+}

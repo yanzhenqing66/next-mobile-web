@@ -1,0 +1,87 @@
+@import '../../../../styles/common.scss';
+
+%btnCss {
+  padding: rem(4) rem(6);
+  border-radius: 100px;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(11);
+}
+
+.container {
+  margin: 0 auto;
+  width: rem(350);
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding: rem(10);
+  margin-bottom: rem(10);
+}
+
+.top {
+  display: flex;
+
+  .shop {
+    font-size: rem(12);
+    margin-right: rem(3);
+  }
+}
+
+.center {
+  padding: rem(12) 0;
+  display: flex;
+  align-items: center;
+
+  .center_pic {
+    width: rem(74);
+    height: rem(74);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-right: rem(5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .goods_name {
+    flex: 1;
+    margin-left: rem(12);
+    @extend %max2Line;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .info {
+    font-size: rem(10);
+    line-height: rem(13);
+  }
+
+  .track {
+    @extend %btnCss;
+  }
+
+  .view {
+    @extend %btnCss;
+    margin-left: rem(5);
+  }
+
+  .buy_again {
+    @extend %btnCss;
+  }
+}
+
+.refund {
+  font-weight: 400;
+  font-size: rem(10);
+  text-align: right;
+  color: $fontCol2;
+
+  p {
+    margin-top: rem(10);
+  }
+}

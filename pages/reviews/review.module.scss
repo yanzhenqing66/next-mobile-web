@@ -1,0 +1,15 @@
+.review {
+  background-color: #fff;
+
+  .header {
+    height: 105px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+  .main {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../../styles/common.scss';
+
+.my_wishList {
+  text-align: center;
+
+  h3 {
+    font-size: rem(14);
+    font-weight: 600;
+    margin-bottom: rem(15);
+  }
+}

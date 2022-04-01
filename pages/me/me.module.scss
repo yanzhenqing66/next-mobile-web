@@ -1,0 +1,61 @@
+@import '../../styles/common.scss';
+
+.me {
+  .user {
+    padding: rem(20);
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+
+    &_ava {
+      width: rem(58);
+      height: rem(58);
+      border-radius: 50%;
+      margin-right: rem(12);
+
+      svg {
+        width: rem(58);
+        height: rem(58);
+      }
+    }
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+    .nickname {
+      font-size: rem(16);
+      font-weight: 600;
+      line-height: rem(22);
+      color: #222;
+      text-decoration: none;
+    }
+
+    .login {
+      margin-top: rem(5);
+      color: #646464;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .editUser {
+    margin-top: rem(16);
+    padding: rem(20);
+  }
+
+  .loginBtn {
+    width: rem(300);
+    height: rem(38);
+    background-color: #F93A3A;
+    border-radius: rem(100);
+    color: #fff;
+    font-size: rem(13);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

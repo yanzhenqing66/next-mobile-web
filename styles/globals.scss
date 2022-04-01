@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import './common.scss';
+@font-face {
+  font-family: AR;
+  font-weight: 600;
+  src: url(../assets/font/Avenir-Heavy.otf);
+}
+
+@font-face {
+  font-family: AR;
+  font-weight: 500;
+  src: url(../assets/font/Avenir-Roman.otf);
+}
+
+// 根元素大小使用 vw 单位
+$vw_design: 750;
+
+html {
+  background-color: #f4f4f4;
+  font-size: calc($vw_fontsize / ($vw_design / 2)) * 100vw;
+
+  // 同时，通过Media Queries 限制根元素最大最小值
+  @media screen and (max-width: 320px) {
+    font-size: 64px;
+  }
+
+  @media screen and (min-width: 500px) {
+    font-size: 100px;
+  }
+  // scroll-behavior: smooth;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  // -webkit-overflow-scrolling: touch;
+}
+
+body {
+  max-width: 500px;
+  min-width: 320px;
+  box-shadow: 0 0 2px #c8c8c8;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-text-size-adjust: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#__next {
+  font: 0.16rem/1.14 AR;
+  color: #222;
+  word-wrap: break-word;
+  outline: 0 !important;
+  position: relative;
+}
+
+// antd-mobile 主题配置
+:root:root {
+  --adm-color-primary: #F93A3A;
+  --adm-color-text: #222;
+  --adm-font-family: AR;
+  --adm-font-size-main: 0.16rem;
+}
+
+.space {
+  margin: 0 10px;
+}

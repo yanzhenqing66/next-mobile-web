@@ -1,0 +1,19 @@
+@import '../../../../styles/common.scss';
+
+.return_reason {
+  margin-top: rem(20);
+
+  &_title {
+    margin-bottom: rem(10);
+  }
+
+  &_addPic {
+    width: rem(80);
+    height: rem(80);
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    font-size: rem(10);
+    @extend %flexCenter;
+    flex-direction: column;
+  }
+}

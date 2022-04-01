@@ -1,0 +1,35 @@
+@import '../../../../../../styles/common.scss';
+
+.form {
+  .title {
+    margin: rem(20);
+  }
+
+  .flex {
+    width: 100%;
+    display: flex;
+  }
+
+  :global {
+    .adm-input {
+      font-size: rem(13);
+    }
+
+    .adm-form-item-footer {
+      font-size: rem(10);
+    }
+
+    .adm-list-item-content-main {
+      font-size: rem(13);
+    }
+  }
+
+  .saveBtn {
+    width: 120px;
+    height: 44px;
+    margin: 0 auto;
+    background-color: #222;
+    color: #fff;
+    font-size: rem(13);
+  }
+}

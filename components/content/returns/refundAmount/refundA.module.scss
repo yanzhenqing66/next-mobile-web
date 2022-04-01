@@ -1,0 +1,21 @@
+@import '../../../../styles/common.scss';
+
+.refund_amount {
+  margin-top: rem(20);
+  &_head {
+    font-weight: 700;
+  }
+
+  &_price {
+    padding: rem(40) 0;
+    display: flex;
+    justify-content: space-between;
+    @extend %borderBot;
+  }
+
+  &_pleft {
+    color: $primaryColor;
+    font-weight: 600;
+    font-size: rem(18);
+  }
+}

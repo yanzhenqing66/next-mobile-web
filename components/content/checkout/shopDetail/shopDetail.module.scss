@@ -1,0 +1,91 @@
+@import '../../../../styles/common.scss';
+
+
+.wrap {
+  margin-top: rem(30);
+
+  .header {
+    display: flex;
+    font-size: rem(13);
+
+    h3 {
+      margin-left: rem(5);
+    }
+  }
+
+  .goods {
+    margin-top: rem(20);
+    display: flex;
+    position: relative;
+  }
+
+  .goods_img {
+    width: rem(86);
+    height: rem(86);
+    border-radius: 8px;
+    overflow: hidden;
+    @extend %flexCenter;
+  }
+
+  .goods_desc {
+    margin-left: rem(10);
+    flex: 1;
+
+    .title {
+      font-size: rem(13);
+      font-weight: 600;
+      line-height: rem(18);
+      @extend %max2Line;
+    }
+
+    .attr {
+      font-size: rem(8);
+      font-weight: 400;
+      margin-top: rem(4);
+    }
+
+    .pro_price {
+      font-weight: 600;
+      font-size: rem(13);
+      position: absolute;
+      bottom: 0;
+
+      .skuNum {
+        color: #919191;
+        margin-left: rem(15);
+        font-weight: normal;
+      }
+    }
+  }
+
+  .detail {
+    margin-top: rem(10);
+
+    :global {
+      .adm-list-body {
+        font-size: rem(12);
+      }
+      
+      .adm-list-item-content-extra {
+        font-size: rem(12);
+      }
+    }
+  }
+
+  .price {
+    // padding: rem(20) 0;
+    padding: rem(10) rem(5);
+    border-bottom: 1px solid #eee;
+    line-height: rem(20);
+    color: $fontCol2;
+
+    p {
+      display: flex;
+      justify-content: space-between;
+
+      &:last-child {
+        color: #222;
+      }
+    }
+  }
+}

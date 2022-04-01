@@ -1,0 +1,81 @@
+@use 'sass:math';
+
+// rem 单位换算：定为 75px 只是方便运算，750px-75px、640-64px、1080px-108px，如此类推
+$vw_fontsize: 75; // iPhone 6尺寸的根元素大小基准值
+
+@function rem($px) {
+  @return math.div($px, $vw_fontsize) * 1rem;
+}
+
+$primaryColor: #F93A3A;
+$fontColor: #222;
+$bgColor: #f6f6f6;
+$bgf8: #f8f8f8;
+$fontCol1: #646464;
+$fontCol2: #919191;
+
+%flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%max1Line {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+%max2Line {
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+%safeBottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+%borderBot {
+  border-bottom: 1px solid #f6f6f6;
+}
+
+%fixedBot {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+%fixedTop {
+  position: fixed;
+  top: 0;
+  max-width: 500px;
+  width: 100%;
+}
+
+%px1Solid {
+  position: relative;
+
+  &::after {
+    // 实现1物理像素的下边框线
+    content: '';
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    background-color: #eee;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      -webkit-transform: scaleY(0.5);
+      -webkit-transform-origin: 50% 0%;
+    }
+  }
+}

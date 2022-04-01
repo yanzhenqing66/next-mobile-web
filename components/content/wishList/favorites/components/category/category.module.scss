@@ -1,0 +1,30 @@
+@import '../../../../../../styles/common.scss';
+
+.category {
+  height: rem(50);
+  display: flex;
+  align-items: center;
+  
+  position: sticky;
+  width: 100%;
+  top: rem(90);
+  padding: rem(10) rem(25);
+  background-color: #fff;
+  z-index: 9;
+
+
+  li {
+    padding: rem(5) rem(10);
+    border-radius: 100px;
+    background-color: #f8f8f8;
+    color: #646464;
+    margin-right: rem(10);
+    line-height: rem(18);
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #FFF5F5;
+    color: #F93A3A;
+  }
+}

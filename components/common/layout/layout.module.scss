@@ -1,0 +1,17 @@
+  @import '../../../styles/common.scss';
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    @extend %safeBottom;
+  }
+
+  .line {
+    position: fixed;
+    bottom: 0;
+    max-width: 500px;
+    width: 100%;
+    height: constant(safe-area-inset-bottom);
+    height: env(safe-area-inset-bottom);
+    background-color: #fff;
+  }

@@ -1,0 +1,49 @@
+@import '../../../../styles/common.scss';
+
+.wrap {
+  padding: 0 rem(20);
+
+  .container {
+    padding: rem(20) 0;
+    @extend %px1Solid;
+  }
+}
+
+.shop {
+  display: flex;
+
+  h3 {
+    margin-left: rem(5);
+  }
+}
+
+.content {
+  margin-top: rem(12);
+  display: flex;
+  align-items: center;
+
+  .img {
+    width: rem(86);
+    height: rem(86);
+    border-radius: 8px;  
+    overflow: hidden;  
+    @extend %flexCenter;
+    margin-right: rem(10);
+}
+
+  .title {
+    flex: 1;
+    height: rem(86);
+    position: relative;
+  }
+
+  .name {
+    @extend %max2Line;
+  }
+
+  .writeBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

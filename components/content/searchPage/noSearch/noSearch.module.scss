@@ -1,0 +1,27 @@
+@import '../../../../styles/common.scss';
+
+.noSearch {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh rem(20);
+  box-sizing: border-box;
+
+  img {
+    width: rem(120);
+    height: rem(120);
+    background-color: #fff;
+  }
+
+  p {
+    font-size: rem(14);
+    font-weight: 600;
+    margin: rem(20) 0;
+  }
+
+  .goHome {
+    width: rem(100);
+    height: rem(40);
+  }
+}

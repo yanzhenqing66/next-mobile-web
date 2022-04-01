@@ -1,0 +1,42 @@
+@import '../../../../styles/common.scss';
+
+.top {
+  padding: rem(20) 0 rem(10) rem(30);
+}
+
+.bottom {
+  padding: rem(12) rem(30);
+  p {
+    font-weight: 400;
+    line-height: rem(18);
+  }
+}
+
+.shop_title {
+  display: flex;
+
+  h3 {
+    margin-left: rem(5);
+  }
+}
+
+.goods {
+  margin-top: rem(12);
+
+  .goods_img {
+    height: rem(74);
+    width: rem(74);
+    border-radius: 8px;
+    margin-right: rem(5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.line {
+  height: rem(9);
+  background-color: #f8f8f8;
+}

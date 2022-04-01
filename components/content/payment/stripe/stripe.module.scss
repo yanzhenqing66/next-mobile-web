@@ -1,0 +1,87 @@
+@import '../../../../styles/common.scss';
+
+.wrap {
+  width: rem(333);
+  margin: 0 auto;
+  background-color: #fff;
+
+  .top {
+    line-height: rem(20);
+    margin-bottom: rem(20);
+
+    p {
+      font-size: rem(10);
+      font-weight: 400;
+      color: #7A7A7A;
+    }
+
+    .card {
+      width: rem(30);
+      height: rem(20);
+      overflow: hidden;
+      margin-right: rem(8);
+      margin-top: rem(8);
+      display: inline-block;
+    }
+  }
+  
+  :global {
+
+    label {
+      color: #6b7c93;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+    }
+
+    .StripeElement {
+      display: block;
+      margin: rem(10) 0 rem(20) 0;
+      max-width: 500px;
+      padding: rem(10) rem(14);
+      font-size: 1em;
+      font-family: "Source Code Pro", monospace;
+      box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+        rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+      border: 0;
+      outline: 0;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .StripeElement--focus {
+      box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+        rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+      -webkit-transition: all 150ms ease;
+      transition: all 150ms ease;
+    }
+
+    .StripeElement.IdealBankElement,
+    .StripeElement.FpxBankElement,
+    .StripeElement.PaymentRequestButton {
+      padding: 0;
+    }
+
+    .StripeElement.PaymentRequestButton {
+      height: rem(40);
+    }
+  }
+}
+
+.bottom {
+  // padding: 0 rem(20);
+  width: 100%;
+  height: rem(48);
+  position: sticky;
+  bottom: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+
+  .pay_now {
+    width: rem(90);
+    height: rem(35);
+    font-size: rem(14);
+  }
+}

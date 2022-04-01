@@ -1,0 +1,76 @@
+@import '../../../styles/common.scss';
+
+.waterfall {
+  width: 100%;
+  margin: 0 auto;
+  padding: rem(15) 0;
+}
+
+.gItem {
+  width: rem(162);
+  margin-bottom: rem(15);
+}
+
+.goodsImg {
+  position: relative;
+  min-height: rem(140);
+  max-height: rem(250);
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  @extend %flexCenter;
+}
+
+.brand {
+  position: absolute;
+  left: rem(5);
+  bottom: rem(10);
+
+  padding: 2px 4px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #fff;
+  font-size: rem(10);
+}
+
+.price {
+  padding: rem(5);
+  padding-top: 0;
+  line-height: rem(18);
+
+  .original_price {
+    color: #919191;
+    text-decoration: line-through;
+    margin: 0 rem(2);
+  }
+
+  .discount {
+    color: $primaryColor;
+    background-color: #FFF5F5;
+    padding: rem(2) rem(3);
+    border-radius: rem(3);
+  }
+
+  .mark {
+    margin-right: rem(2);
+    font-size: rem(10);
+  }
+}
+
+.followOpt {
+  width: rem(20);
+  height: rem(20);
+  position: absolute;
+  right: rem(5);
+  bottom: rem(10);
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .like svg {
+    width: rem(22);
+    height: rem(22);
+  }
+}

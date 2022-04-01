@@ -1,0 +1,39 @@
+@import '../../styles/common.scss';
+
+.bgc {
+  width: 100%;
+  height: rem(100);
+  overflow: hidden;
+  position: relative;
+}
+
+.share {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .backBtn {
+    width: 32px;
+    height: 32px;
+    @extend %flexCenter;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    border-radius: 50%;
+  }
+
+  .shareBtn {
+    width: 32px;
+    height: 32px;
+    @extend %flexCenter;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    border-radius: 50%;
+  }
+}
+
+.headerTab {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  height: 86px;
+  background-color: #fff;
+}

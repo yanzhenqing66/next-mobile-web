@@ -1,0 +1,10 @@
+
+
+.filter {
+  background-color: #fff;
+  :global {
+    .adm-tabs-tab-line {
+      display: none;
+    }
+  }
+}

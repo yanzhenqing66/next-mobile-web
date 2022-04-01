@@ -1,0 +1,43 @@
+@import '../../../../styles/common.scss';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  max-width: 500px;
+  width: 100%;
+  height: rem(50);
+  padding: 0 rem(38);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 0 2px #c8c8c8;
+
+  img {
+    width: rem(24);
+    height: rem(24);
+  }
+
+  .tabSvg {
+    svg {
+      width: rem(24);
+      height: rem(24);
+    }
+
+    rect {
+      fill: antiquewhite;
+      stroke:aqua;
+    }
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #222;
+    cursor: pointer;
+  }
+}

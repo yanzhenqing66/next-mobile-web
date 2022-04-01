@@ -1,0 +1,66 @@
+@import '../../../styles/common.scss';
+
+.container {
+  width: rem(335);
+  margin: 0 auto;
+  padding-bottom: rem(10);
+}
+
+.box {
+  width: 100%;
+  height: rem(184);
+  padding: rem(20);
+  background-color: $bgf8;
+  border-radius: 8px;
+  margin-top: rem(10);
+
+  .shop {
+    display: flex;
+
+    h4 {
+      margin-left: rem(8);
+    }
+  }
+
+  .product {
+    margin: rem(15) 0;
+    display: flex;
+    align-items: center;
+
+    &_pic {
+      width: rem(86);
+      height: rem(86);
+      background-color: #fff;
+      border-radius: 8px;
+    }
+
+    &_detail {
+      flex: 1;
+      margin-left: rem(10);
+      height: rem(86);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      &_title {
+        @extend %max2Line;
+      }
+
+      &_attr {
+        font-size: rem(10);
+        font-weight: 400;
+      }
+    }
+  }
+
+  .request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: rem(10);
+    }
+  }
+}

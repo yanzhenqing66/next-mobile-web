@@ -1,0 +1,93 @@
+@import '../../../styles/common.scss';
+
+.filterPrice {
+  padding: 0 rem(20);
+  height: 100%;
+  overflow-y: auto;
+  font-size: rem(13);
+
+  .header {
+    height: rem(50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f6f6f6;
+
+    h3 {
+      font-size: rem(16);
+    }
+  }
+
+  .main {
+    h4 {
+      font-size: rem(15);
+      height: rem(30);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    ul {
+      li {
+        height: rem(30);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  .price {
+    margin-top: rem(20);
+
+    h4 {
+      font-size: rem(15);
+      height: rem(30);
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .rangeShow {
+    margin-top: rem(20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .show {
+      box-sizing: border-box;
+      width: 150px;
+      height: 60px;
+      background-color: #f6f6f6;
+      border-radius: 100px;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .am-list-item {
+        font-size: rem(12);
+        flex: 1;
+        background-color: #f6f6f6;
+      }
+
+      .tip {
+        margin: 0 rem(15);
+        color: #919191;
+      }
+    }
+  }
+
+  .footBtn {
+    margin-top: rem(20);
+
+    .searchBtn {
+      height: rem(40);
+      background-color: #222;
+      color: #fff;
+      border-radius: 100px;
+      font-size: rem(14);
+      font-weight: 600;
+    }
+  }
+}

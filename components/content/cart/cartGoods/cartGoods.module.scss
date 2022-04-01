@@ -1,0 +1,144 @@
+@import '../../../../styles/common.scss';
+
+.wrap {
+  min-height: 100vh;
+  padding: 0 rem(20);
+}
+
+.container {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding: rem(20) rem(8);
+  margin-bottom: rem(10);
+}
+
+.remove {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  place-items: center end;
+  margin-bottom: rem(12);
+
+  p {
+    font-weight: 400;
+    color: $primaryColor;
+    font-size: rem(10);
+  }
+}
+
+.top {
+  display: flex;
+
+  .shop {
+    margin-right: rem(5);
+    font-size: rem(12);
+  }
+
+  h3 {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+}
+
+.content {
+  margin-top: rem(18);
+  display: grid;
+  grid-template-columns: rem(25) rem(86) rem(170) 1fr;
+  column-gap: rem(5);
+  align-content: center;
+  position: relative;
+}
+
+.goods_img {
+  width: rem(86);
+  height: rem(86);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  @extend %flexCenter;
+  background-color: #fff;
+
+
+  .error {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.3);
+    z-index: 9;
+    top: 0;
+    text-align: center;
+    line-height: rem(86);
+    color: #f6f6f6;
+  }
+}
+
+.goods_desc {
+  height: rem(86);
+  margin-left: rem(5);
+  position: relative;
+
+  h4 {
+    font-weight: normal;
+    font-size: rem(12);
+    line-height: rem(18);
+    @extend %max2Line;
+  }
+
+  .goods_attr {
+    font-size: rem(10);
+    color: $fontCol2;
+    margin: rem(5) 0;
+  }
+
+  .reselect {
+    font-size: rem(10);
+    color: $primaryColor;
+    margin: rem(5) 0;
+  }
+
+  .goods_price {
+    font-weight: 700;
+    font-size: rem(13);
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.right {
+  height: rem(86);
+
+  .addwish {
+    width: rem(20);
+    height: rem(20);
+  }
+}
+
+.stepCount {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+
+  .step {
+    --height: .293333rem;
+    --input-width: .426667rem;
+    --button-width: .293333rem;
+    --input-font-size: 0.16rem;
+    --border: 0.5px solid #eee;
+    --border-inner: 0.5px solid #eee;
+    --border-radius: 30px;
+    --button-text-color: #222;
+    --input-font-color: #222;
+
+    :global {
+      .adm-input {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.noCart {
+  height: 70vh;
+  @extend %flexCenter;
+}

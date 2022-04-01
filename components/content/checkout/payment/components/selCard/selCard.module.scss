@@ -1,0 +1,25 @@
+@import '../../../../../../styles/common.scss';
+
+.main {
+  padding: rem(20);
+
+  .header {
+    height: rem(40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      color: #919191;
+    }
+  }
+
+  .isDefault {
+    display: inline-block;
+    padding: rem(2) rem(4);
+    background-color: #eee;
+    border-radius: 6px;
+    font-size: rem(8);
+    font-weight: 400;
+  }
+}

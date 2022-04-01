@@ -1,0 +1,47 @@
+@import '../../../../../../styles/common.scss';
+
+
+.wrap {
+
+  .header {
+    padding: rem(20);
+  }
+
+  .cardlist {
+    margin-top: rem(12);
+    width: rem(100);
+    height: rem(20);
+  }
+
+  .form {
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    :global {
+      .adm-input {
+        font-size: rem(13);
+      }
+  
+      .adm-form-item-footer {
+        font-size: rem(10);
+      }
+  
+      .adm-list-item-content-main {
+        font-size: rem(13);
+      }
+
+      .adm-list-item-content-arrow {
+        display: none;
+      }
+    }
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

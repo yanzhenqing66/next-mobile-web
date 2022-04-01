@@ -1,0 +1,21 @@
+@import '../../../styles/common.scss';
+
+.scrollTab {
+	display: inline-block;
+	line-height: 40px;
+	color: #646464;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-weight: 600;
+
+	h2 {
+		display: inline-block;
+		margin-right: rem(20);
+		transition: border-bottom 0.5s linear !important;
+		cursor: pointer;
+
+		&:nth-child(1) {
+			margin-left: 15px;
+		}
+	}
+}

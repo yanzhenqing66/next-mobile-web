@@ -1,0 +1,28 @@
+@import '../../../../styles/common.scss';
+
+.wrap {
+  width: rem(335);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+
+  .img {
+    width: rem(150);
+    height: rem(150);
+  }
+
+  h3 {
+    font-size: rem(18);
+    margin: rem(20) 0;
+  }
+}
+
+.goBtn {
+  width: rem(132);
+  height: rem(38);
+  background-color: #222;
+  color: #fff;
+  border-radius: 30px;
+}

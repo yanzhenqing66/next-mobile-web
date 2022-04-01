@@ -1,0 +1,28 @@
+@import '../../../../styles/common.scss';
+
+.cover {
+  width: 100%;
+  height: rem(214);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .top {
+    position: absolute;
+    top: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .change_pic {
+    position: absolute;
+    bottom: rem(15);
+    right: rem(21);
+    font-size: 23px;
+    color: #f1f1f1;
+  }
+}

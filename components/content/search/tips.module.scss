@@ -1,0 +1,57 @@
+@import '../../../styles/common.scss';
+
+.searchTips {
+  overflow: hidden;
+  color: #222;
+  padding: 15px;
+
+  .history {
+    margin-top: 20px;
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+
+      h4 {
+        font-size: rem(14);
+      }
+    }
+  }
+
+
+  .hot {
+    margin-top: 25px;
+
+    h4 {
+      font-size: rem(14);
+      text-align: left;
+    }
+
+    &_first {
+      display: flex;
+      align-items: center;
+
+      &_pic {
+        margin-top: rem(2);
+        margin-right: rem(5);
+      }
+    }
+  }
+
+
+
+  ul {
+    margin-top: 15px;
+    color: #4e4e4e;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 rem(10) rem(10) 0;
+      background-color: #f8f8f8;
+      padding: rem(6) rem(10);
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+}

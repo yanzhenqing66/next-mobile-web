@@ -1,0 +1,15 @@
+@import '../../../../styles/common.scss';
+
+.container {
+  height: rem(70);
+  @extend %fixedBot;
+  border-top: 1px solid #f6f6f6;
+  @extend %flexCenter;
+
+  .btn {
+    width: rem(335);
+    height: rem(42);
+    border-radius: 100px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../../../styles/common.scss';
+
+.shipping {
+	:global {
+		.adm-list {
+			--padding-left: 0px;
+			--border-top: none;
+		}
+
+		.adm-list-item-content {
+			font-size: rem(14);
+			font-weight: 600;
+			padding: rem(10) 0;
+			color: #222;
+		}
+	}
+
+	.list {
+		font-size: rem(12);
+	}
+
+	.info {
+		font-size: rem(12);
+		font-weight: normal;
+		line-height: rem(20);
+
+		&_pol {
+			white-space: pre-line;
+		}
+
+		.more {
+			margin-top: rem(10);
+			text-align: right;
+			text-decoration: underline;
+			line-height: rem(20);
+			cursor: pointer;
+		}
+	}
+}
+
+.detail_info {
+	padding: rem(15);
+	max-height: 500px;
+	line-height: rem(20);
+	overflow: auto;
+
+	&_pol {
+		white-space: pre-line;
+	}
+}
+
+.item_detail {
+	font-weight: normal;
+	line-height: rem(20);
+	font-size: rem(12);
+	white-space: pre-line;
+	max-width: 500px;
+	width: 100%;
+}

@@ -1,0 +1,74 @@
+@import '../../../../styles/common.scss';
+
+.createWishList {
+
+  .createHeader {
+    height: rem(40);
+    margin-bottom: rem(20);
+    border-bottom: 2px solid #f6f6f6;
+
+    h3 {
+      font-size: rem(16);
+    }
+  }
+
+  .createMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .cover {
+      width: rem(76);
+      height: rem(95);
+    }
+
+    .createName {
+      margin-top: rem(50);
+      position: relative;
+      text-align: center;
+
+      .am-input-control {
+        width: rem(150);
+        border-bottom: 2px solid #222;
+
+        input {
+          width: 100%;
+        }
+      }
+
+      .errorInput {
+        display: none;
+      }
+
+      .activeTip {
+        white-space: nowrap;
+        display: block;
+        font-size: 12px;
+        color: #D43131;
+        position: absolute;
+        top: 20px;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .createFooter {
+    margin-top: rem(10);
+    height: rem(60);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .SaveBtn {
+      background-color: #222;
+      color: #fff;
+      width: rem(82);
+      height: rem(44);
+      border-radius: 30px;
+      font-size: rem(14);
+    }
+  }
+}

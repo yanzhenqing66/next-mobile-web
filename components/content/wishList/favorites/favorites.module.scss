@@ -1,0 +1,10 @@
+@import '../../../../styles/common.scss';
+
+.favorites_wrap {
+  .fw_count {
+    font-weight: 400;
+    font-size: rem(10);
+    line-height: rem(14);
+    margin: rem(15) 0 rem(10) rem(16);
+  }
+}

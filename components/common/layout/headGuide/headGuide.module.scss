@@ -1,0 +1,52 @@
+.head_guide {
+  height: 50px;
+  padding: 0 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 98px;
+    height: 26px;
+    overflow: hidden;
+    background: url('https://cndpoppyapps.oss-us-west-1.aliyuncs.com/poppy_h5/images/guideLogo.svg') no-repeat center;
+
+    h1 {
+      opacity: 0;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .user {
+    margin-right: 20px;
+
+    .headPicture {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .log {
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .openApp {
+    width: 118px;
+    height: 36px;
+    background-color: #F93A3A;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

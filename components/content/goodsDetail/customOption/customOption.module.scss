@@ -1,0 +1,39 @@
+@import '../../../../styles/common.scss';
+
+.customOption {
+  padding: rem(20) 0;
+  border-bottom: 1px solid #f6f6f6;
+  overflow: hidden;
+
+  .optionName {
+    height: rem(30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      font-size: rem(14);
+      font-weight: 600;
+      line-height: rem(22);
+    }
+
+    .rightIcon {
+      width: rem(14);
+      height: rem(14);
+    }
+  }
+
+  .optionCard {
+    margin: rem(10) 0;
+    overflow: hidden;
+
+    li {
+      padding: rem(10) rem(15);
+      float: left;
+      margin-right: rem(5);
+      border-radius: rem(8);
+      background-color: #f6f6f6;
+      margin-bottom: rem(10);
+    }
+  }
+}

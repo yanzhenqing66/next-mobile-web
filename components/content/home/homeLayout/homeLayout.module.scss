@@ -1,0 +1,21 @@
+.homeLayout {
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+
+  height: 110px;
+  overflow: hidden;
+}
+
+.search {
+  padding: 0 15px;
+  position: relative;
+
+  .hotSwiper {
+    position: absolute;
+    top: 23px;
+    left: 48px;
+  }
+}

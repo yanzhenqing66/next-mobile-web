@@ -1,0 +1,49 @@
+@import '../../../../styles/common.scss';
+
+.convert_image {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .first,
+  .second {
+    width: 280px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 1px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .third {
+    width: 140px;
+
+    .top,
+    .bottom {
+      height: 200px;
+      background-color: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 240px;
+        height: 200px;
+      }
+    }
+
+    .top {
+      margin-bottom: 1px;
+    }
+  }
+}

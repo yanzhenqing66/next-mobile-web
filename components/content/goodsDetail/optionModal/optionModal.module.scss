@@ -1,0 +1,76 @@
+@import '../../../../styles/common.scss';
+
+.option_modal {
+  padding: rem(20);
+
+  .goods_info {
+    height: rem(80);
+    display: flex;
+    padding-bottom: rem(10);
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+  .info_img {
+    width: rem(68);
+    height: rem(68);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: rem(20);
+    align-items: flex-start;
+
+    p {
+      &:nth-child(1) {
+        color: #F93A3A;
+        font-size: rem(15);
+        font-weight: 600;
+      }
+
+      &:nth-child(2) {
+        color: #646464;
+      }
+    }
+  }
+}
+
+.goodOption {
+  height: calc(70vh - rem(20) - rem(80) - rem(60) - rem(10));
+  overflow: hidden;
+
+  h4 {
+    font-size: rem(13);
+    font-weight: 600;
+    line-height: rem(22);
+    margin: rem(10) 0;
+  }
+
+  .attr_option {
+    min-width: rem(105);
+    min-height: rem(38);
+  }
+}
+
+.optFoot {
+  position: fixed;
+  bottom: 0;
+  height: rem(60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .gobuy {
+    width: rem(335);
+    height: rem(40);
+    background-color: $primaryColor;
+    color: #fff;
+    font-size: rem(14);
+  }
+}

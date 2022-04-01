@@ -1,0 +1,75 @@
+@import '../../../../styles/common.scss';
+
+%btn {
+  width: rem(112);
+  height: rem(37);
+  font-size: rem(13);
+  font-weight: 600;
+}
+
+.footBtn {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: rem(50);
+  padding: rem(20);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0 0 rem(2) #c8c8c8;
+}
+
+.addCart {
+  @extend %btn;
+  background-color: #fff;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+}
+
+.goBuy,
+.download {
+  @extend %btn;
+  background-color: $primaryColor;
+  color: #fff;
+}
+
+.download {
+  width: rem(190);
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .msg {
+    svg {
+      width: rem(22);
+      height: rem(22);
+    }
+  }
+
+  p {
+    margin-top: rem(2);
+    color: $primaryColor;
+  }
+}
+
+.favor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .favorIcon {
+    font-size: rem(24);
+    color: $primaryColor;
+  }
+
+  p {
+    margin-top: rem(2);
+    color: $primaryColor;
+  }
+}

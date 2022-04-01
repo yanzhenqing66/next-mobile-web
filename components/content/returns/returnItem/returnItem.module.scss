@@ -1,0 +1,63 @@
+@import '../../../../styles/common.scss';
+
+.return_Item {
+  .ri_head {
+    height: rem(30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      &:first-child {
+        font-weight: 700;
+      }
+
+      &:last-child {
+        color: #919191;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.rg_goods {
+  width: 100%;
+  height: rem(126);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f6f6f6;
+
+  .rgg_pic {
+    width: rem(86);
+    height: rem(86);
+    border-radius: 8px;
+  }
+
+  .rgg_info {
+    flex: 1;
+    margin-left: rem(12);
+    height: rem(86);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .gi_tit {
+      @extend %max2Line;
+    }
+
+    .gi_attr {
+      font-weight: 400;
+      font-size: rem(10);
+    }
+
+    .gi_price {
+      font-weight: 700;
+      font-size: rem(14);
+
+      span {
+        font-size: rem(10);
+        font-weight: normal;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../../styles/common.scss';
+
+.reviewList {
+  padding: rem(15) 0;
+  position: relative;
+  border-bottom: 1px solid #f6f6f6;
+
+  &:last-of-type {
+    border: none;
+  }
+
+  .user {
+    display: flex;
+
+    img {
+      width: rem(36);
+      height: rem(36);
+      border-radius: 50%;
+    }
+
+    .info {
+      margin-left: rem(10);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h5 {
+        .name {
+          font-size: 14px;
+          font-weight: 600;
+          margin-right: 8px;
+        }
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      p {
+        color: #7a7a7a;
+        font-size: 10px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .view {
+    margin-top: rem(10);
+    line-height: rem(18);
+    font-weight: 400;
+  }
+
+  .pic {
+    overflow: hidden;
+
+    img {
+      width: rem(74);
+      height: rem(74);
+      float: left;
+      margin: rem(5) rem(8) rem(8) 0;
+    }
+  }
+}

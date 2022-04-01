@@ -1,0 +1,76 @@
+@import '../../../../styles/common.scss';
+
+.paySuccess {
+  height: calc(100vh - 48px - rem(48));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .right {
+    margin-left: rem(15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-size: rem(18);
+    }
+
+    p {
+      font-size: rem(10);
+      font-weight: 400;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    height: rem(48);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .goHome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .home svg {
+        width: rem(24);
+        height: rem(24);
+      }
+    }
+    
+    .goCheck {
+      background-color: #222;
+      color: #fff;
+      width: rem(160);
+      height: rem(38);
+    }
+  }
+}
+
+
+
+.payFailed {
+  height: calc(100vh - 48px - rem(48));
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vh;
+  align-items: center;
+  line-height: rem(20);
+
+  h3 {
+    font-size: rem(18);
+    margin: rem(10) 0;
+  }
+  
+  p {
+    font-size: rem(10);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: rem(10);
+  }
+}

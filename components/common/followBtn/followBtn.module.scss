@@ -1,0 +1,19 @@
+@import '../../../styles/common.scss';
+
+%btnCom {
+  width: 90px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.follow {
+  @extend %btnCom;
+  background-color: #222;
+  color: #fff;
+}
+
+.following {
+  @extend %btnCom;
+  box-sizing: border-box;
+}

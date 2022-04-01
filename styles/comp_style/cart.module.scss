@@ -1,0 +1,28 @@
+@import '../common.scss';
+
+.title {
+  height: rem(60);
+  line-height: rem(60);
+  padding: 0 rem(20);
+  font-weight: 700;
+  font-size: rem(24);
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 12;
+}
+
+.removeNot {
+  color: $primaryColor;
+  text-align: center;
+
+  p {
+    margin: rem(10) 0;
+  }
+
+  .notBtn {
+    // width: rem(75);
+    height: rem(28);
+    margin-bottom: rem(10);
+  }
+}

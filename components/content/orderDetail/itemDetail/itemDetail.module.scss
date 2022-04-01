@@ -1,0 +1,30 @@
+@import '../../../../styles/common.scss';
+
+
+.warp {
+  height: rem(104);
+  background-color: #f8f8f8;
+  padding: rem(12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  .sku_pic {
+    width: rem(60);
+    height: rem(60);
+    background-color: #fff;
+    border-radius: 8px;
+  }
+}
+
+.bottom {
+  margin-top: rem(8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

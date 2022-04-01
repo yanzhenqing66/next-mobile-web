@@ -1,0 +1,48 @@
+@import '../../../styles/common.scss';
+
+.wrap {
+  padding: rem(20);
+}
+
+.join {
+  margin-top: rem(20);
+  min-height: 100vh;
+  overflow-y: auto;
+  text-align: center;
+
+  h3 {
+    margin-top: rem(20);
+    font-size: rem(24);
+  }
+
+  .tips {
+    margin-top: rem(15);
+    margin-bottom: rem(20);
+    font-size: rem(14);
+  }
+}
+
+.loginOpt {
+  width: rem(280);
+  margin: 0 auto;
+
+  li {
+    width: 100%;
+    height: rem(50);
+    border-radius: 100px;
+    border: 1.5px solid #222;
+    margin-top: rem(12);
+    font-size: rem(14);
+    font-weight: 600;
+    cursor: pointer;
+    padding-right: rem(20);
+    position: relative;
+
+    .child {
+      height: rem(50);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}

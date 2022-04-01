@@ -1,0 +1,18 @@
+@import '../../../../styles/common.scss';
+
+.title {
+  margin-top: rem(30);
+  margin-bottom: rem(10);
+}
+
+.paypal_payment {
+  font-size: rem(12);
+  color: #ccc;
+  position: relative;
+
+  .paypal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

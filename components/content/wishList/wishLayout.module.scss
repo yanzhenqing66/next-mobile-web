@@ -1,0 +1,40 @@
+@import '../../../styles/common.scss';
+
+.wishList {
+  min-height: 100vh;
+
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    height: rem(90);
+    z-index: 9;
+    padding: 0 rem(10);
+
+    .headerTitle {
+      padding: 0 rem(8);
+      height: rem(55);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: rem(24);
+      }
+    }
+
+    :global {
+      .adm-tabs {
+        // width: rem(300);
+      }
+    }
+  }
+
+  .main {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+}

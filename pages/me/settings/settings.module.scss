@@ -1,0 +1,26 @@
+@import '../../../styles/common.scss';
+
+.settings {
+
+  :global {
+    .adm-list  {
+      padding: 0 10px;
+    }
+
+    .adm-list-item-content-main {
+      padding: 20px 0;
+    }
+  }
+
+  .signOut {
+    position: relative;
+    left: 50%;
+    width: rem(100);
+    transform: translateX(-50%);
+    margin-top: rem(30);
+    font-size: rem(14);
+    font-weight: 600;
+    color: #222;
+    cursor: pointer;
+  }
+}

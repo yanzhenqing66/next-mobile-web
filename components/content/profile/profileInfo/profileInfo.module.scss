@@ -1,0 +1,48 @@
+@import '../../../../styles/common.scss';
+
+.profile_info {
+  width: 100%;
+  padding: 0 rem(40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .head_pic {
+    width: rem(50);
+    height: rem(50);
+
+    position: absolute;
+    top: rem(190);
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  h4 {
+    margin-top: rem(30);
+    font-size: rem(16);
+    font-weight: 600;
+  }
+
+  .desc {
+    font-weight: 400;
+    color: #646464;
+    line-height: rem(14);
+    margin: rem(10) 0;
+  }
+
+  .edit {
+    width: rem(78);
+    height: rem(28);
+    line-height: rem(25);
+    font-weight: 400;
+    color: #646464;
+    border-radius: 100px;
+    border: 1px solid #646464;
+    text-align: center;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,208 @@
+@import './common.scss';
+
+.f10 {
+	font-size: rem(10);
+}
+
+.f11 {
+	font-size: rem(11);
+}
+
+.f13 {
+	font-size: rem(13);
+}
+
+.f14 {
+	font-size: rem(14);
+}
+
+.f15 {
+	font-size: rem(15);
+}
+
+.lh16 {
+	line-height: rem(16);
+}
+
+.lh18 {
+	line-height: rem(18);
+}
+
+.textC {
+	text-align: center;
+}
+
+.fw400 {
+	font-weight: 400;
+}
+
+.fw500 {
+	font-weight: 500;
+}
+
+.fw600 {
+	font-weight: 600;
+}
+
+.fw700 {
+	font-weight: 700;
+}
+
+.colPri {
+	color: #f93a3a;
+}
+
+.col2 {
+	color: #222;
+}
+
+.col91 {
+	color: #919191;
+}
+
+.col7a {
+	color: #007aff;
+}
+
+.bgf6 {
+	background-color: #f6f6f6;
+}
+
+.bgf8 {
+	background-color: #f8f8f8;
+}
+
+.bgf {
+	background-color: #fff;
+}
+
+.boxShadow {
+	box-shadow: 0 0 rem(2) #c8c8c8;
+}
+
+.mtb20 {
+	margin: rem(22) 0;
+}
+
+.mt10 {
+	margin-top: rem(10);
+}
+
+.mt20 {
+	margin-top: rem(20);
+}
+
+.mb20 {
+	margin-bottom: rem(20);
+}
+
+.ml10 {
+	margin-left: rem(10);
+}
+
+.mr2 {
+	margin-right: rem(2);
+}
+
+.mr10 {
+	margin-right: rem(10);
+}
+
+.p5 {
+	padding: rem(5);
+}
+
+.p10 {
+	padding: rem(10);
+}
+
+.p20 {
+	padding: rem(20);
+}
+
+.ptb20 {
+	padding: rem(20) 0;
+}
+
+.plr20 {
+	padding: 0 rem(20);
+}
+
+.pb10 {
+	padding-bottom: rem(10);
+}
+
+.br8 {
+	border-radius: 8px;
+}
+
+.min100vh {
+	min-height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.flexCol {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexBetween {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flexEve {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.alignCenter {
+	display: inline-flex;
+	align-items: center;
+}
+
+.max1Line {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.max2Line {
+	display: -webkit-box !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	// word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.borBot {
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.fixedBot {
+	max-width: 500px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+.stickyTop {
+	position: sticky;
+	top: 0;
+}
+
+.pointer {
+	cursor: pointer;
+}

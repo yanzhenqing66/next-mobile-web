@@ -1,0 +1,17 @@
+@import '../../../../styles/common.scss';
+
+.about {
+  margin-top: rem(25);
+  h3 {
+    font-size: rem(16);
+    font-weight: 700;
+    line-height: rem(20);
+    margin-bottom: rem(10);
+  }
+
+  :global {
+    .adm-list-default {
+      border: none;
+    }
+  } 
+}
